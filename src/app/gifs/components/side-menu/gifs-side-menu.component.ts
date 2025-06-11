@@ -16,21 +16,4 @@ interface MenuOption {
   templateUrl: './gifs-side-menu.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class GifsSideMenuComponent {
-
-  menuOptions: MenuOption[] = [
-    {
-      icon: 'fa-solid fa-chart-line',
-      label: 'Trending',
-      sublabel: 'Gifs populares',
-      route: '/dashboard/trending'
-    },
-    {
-      icon: 'fa-solid fa-magnifying-glass',
-      label: 'Buscador',
-      sublabel: 'Buscar gifs',
-      route: '/dashboard/search'
-    }
-  ]
-
- }
+export class GifsSideMenuComponent {}
