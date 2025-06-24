@@ -1,5 +1,6 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { GifListComponent } from "../../components/gif-list/gif-list.component";
+import { GifsService } from '../../services/gifs.service';
 
 //*Lista
 const imageUrls: string[] = [
@@ -27,5 +28,7 @@ export default class TrendingPageComponent {
 
   //*Asignamos a una propiedad publica para enviarla al componente hijo
   public imageUrls = imageUrls;
+
+  gifService = inject(GifsService);
 
 }
