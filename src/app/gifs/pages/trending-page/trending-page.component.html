@@ -1,4 +1,5 @@
 
 <div class="py-5">
-  <gif-list [gifs] = "imageUrls" /> <!--Enviamos al componente hijo-->
+  <!--<gif-list [gifs] = "imageUrls" /> Enviamos al componente hijo-->
+  <gif-list [gifs]="gifService.trendingGifs()"/>
 </div>
