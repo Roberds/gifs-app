@@ -17,6 +17,7 @@ export default class SearchPageComponent {
   onSearch(query: string) {
     this.gifService.searchGifs(query).subscribe(data => {
       this.gifs.set(data);
+      console.log('history', this.gifService.searchHistory())
     })
   }
 

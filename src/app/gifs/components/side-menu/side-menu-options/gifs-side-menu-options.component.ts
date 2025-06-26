@@ -1,5 +1,6 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { GifsService } from 'src/app/gifs/services/gifs.service';
 
 
 
@@ -16,6 +17,12 @@ interface MenuOption {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class GifsSideMenuOptionsComponent {
+
+  gifService = inject(GifsService);
+
+
+
+
 
   menuOptions: MenuOption[] = [
     {
